@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nick</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-    }
-    p {
-      width: 100px;
-      padding: 10px;
-      margin: 100px auto;
-      background: goldenrod;
-      border-radius: 4px;
-      color: yellow;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+
+  <title>Nick Tassone</title>
+
+  <link rel="stylesheet" href="temp.css"/>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
 </head>
 <body>
-  <p>One second.</p>
+<div class="container preload">
+  <header>
+    <h1>Tassone, Nick</h1>
+    <h2>UI Designer</h2>
+    <p>I'm a designer of interfaces, user experience, and beyond at <a href="goinstant.com" target="_blank">GoInstant</a>. I do some other stuff too!</p>
+    <ul>
+      <li><a href="twitter.com/n_tassone" target="_blank">@n_tassone</a></li>
+      <li><a href="github.com/ntassone" target="_blank">github.com/ntassone</a></li>
+      <li><a href="mailto:ntassone@gmail.com" target="_blank">ntassone@gmail.com</a></li>
+    </ul>
+  </header>
+</div>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript">
+window.setTimeout(function(){
+  $('.container').removeClass('preload');
+}, 100);
+</script>
 </body>
 </html>
