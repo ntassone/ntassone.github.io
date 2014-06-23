@@ -6,10 +6,15 @@ body, html {
 body {
   margin: 0;
   padding: 0;
-  background: #22262c;
   font-family: 'Inconsolata', sans-serif;
   color: white;
   color: rgba(255,255,255,.8);
+  letter-spacing: -.025em;
+  background-color: #17191e;
+  background-image: radial-gradient(rgba(255,255,255,.15) 2.5%, transparent 2%),
+  radial-gradient(rgba(255,255,255,.15) 2.5%, transparent 2%);
+  background-size:60px 60px;
+  background-position: 0 0px, 30px 30px;
 }
 
 * {
@@ -19,7 +24,7 @@ body {
 
 .container {
   position: relative;
-  max-width: 400px;
+  max-width: 600px;
   margin: 0 auto;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -34,17 +39,23 @@ h1, h2, h3, h4, ul {
 }
 
 h1 {
-  font-size: 1.75rem;
-  color: #1050a1;
+  display: inline-block;
+  font-size: 2.5rem;
+  color: #1389d0;
+  font-weight: 100;
+  background: white;
+  margin-bottom: 3rem;
+  margin-left: -1rem;
+  padding: 0 .5rem;
 }
 
 h2 {
-  font-size: 1.25rem;
-  color: #1389d0;
+  font-size: 1.5rem;
+  color: #1067de;
 }
 
 p {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 
 a {
@@ -58,12 +69,13 @@ a {
   }
 
 ul {
-  border-top: 1px dashed #1050a1;
   list-style-type: none;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
   ul li {
-    padding: .5rem 0;
+    padding: 0 .5rem 0 0;
+    display: inline-block;
+    font-size: 1.25rem;
   }
 
   ul a {
@@ -75,3 +87,16 @@ ul {
       color: rgba(202, 60, 60, 1);
       border-bottom-color: rgba(202, 60, 60, 1);
     }
+
+.ribbon {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 26px;
+  background: goldenrod;
+  background-image: repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,.15) 35px, rgba(255,255,255,.15) 70px);
+  text-align: center;
+  color: #17191e;
+  padding: .75rem 0 .5rem;
+}
